@@ -13,7 +13,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liblua", "scripting\lua\pro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloLua", "samples\HelloLua\proj.win32\HelloLua.vcxproj", "{13E55395-94A2-4CD9-BFC2-1A051F80C17D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloCpp", "samples\HelloCpp\proj.win32\HelloCpp.vcxproj", "{B8BF9E81-35FD-4582-BA1C-B85FA365BABB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TRexPushups", "samples\HelloCpp\proj.win32\HelloCpp.vcxproj", "{B8BF9E81-35FD-4582-BA1C-B85FA365BABB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCpp", "samples\TestCpp\proj.win32\TestCpp.vcxproj", "{76A39BB2-9B84-4C65-98A5-654D86B86F2A}"
 EndProject
@@ -35,10 +35,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestLua", "samples\TestLua\
 		{F8EDD7FA-9A51-4E80-BAEB-860825D2EAC6} = {F8EDD7FA-9A51-4E80-BAEB-860825D2EAC6}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorials", "samples\Tutorials\proj.win32\Tutorials.vcxproj", "{5A0A05D3-688E-47FA-BE8C-45D53AAE73EB}"
+EndProject
 Global
-	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
-		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32
@@ -88,8 +87,15 @@ Global
 		{4E6A7A0E-DDD8-4BAA-8B22-C964069364ED}.Debug|Win32.Build.0 = Debug|Win32
 		{4E6A7A0E-DDD8-4BAA-8B22-C964069364ED}.Release|Win32.ActiveCfg = Release|Win32
 		{4E6A7A0E-DDD8-4BAA-8B22-C964069364ED}.Release|Win32.Build.0 = Release|Win32
+		{5A0A05D3-688E-47FA-BE8C-45D53AAE73EB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5A0A05D3-688E-47FA-BE8C-45D53AAE73EB}.Debug|Win32.Build.0 = Debug|Win32
+		{5A0A05D3-688E-47FA-BE8C-45D53AAE73EB}.Release|Win32.ActiveCfg = Release|Win32
+		{5A0A05D3-688E-47FA-BE8C-45D53AAE73EB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
 	EndGlobalSection
 EndGlobal
