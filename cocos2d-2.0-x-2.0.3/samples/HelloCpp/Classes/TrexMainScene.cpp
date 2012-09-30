@@ -1,5 +1,4 @@
 #include "TrexMainScene.h"
-#include <boost/foreach.hpp>
 #include <vector>
 #include <iostream>
 
@@ -43,9 +42,7 @@ bool TrexMainScene::init(){
 	//	"CloseSelected.png",
 	//	this,
 	//	menu_selector(TrexMainScene::menuCloseCallback));
-
-	auto ary = CCArray();
-
+    
 	auto *lbl = CCLabelTTF::create("FACK", "Arial", 24.0);
 	auto *pCloseItem = CCMenuItemLabel::create(lbl, this, menu_selector(TrexMainScene::menuCloseCallback));
 
@@ -53,13 +50,11 @@ bool TrexMainScene::init(){
 		ccp(origin.x + visibleSize.width - pCloseItem->getContentSize().width/2,
 			origin.y + pCloseItem->getContentSize().height/2));
 
-	ary.addObject(pCloseItem);
-
 	// Create the menu, which is apparently also autorelease
-	CCMenu *pMenu = CCMenu::createWithArray(&ary);
+    
+	CCMenu *pMenu = CCMenu::create(pCloseItem, NULL);
 	pMenu->setPosition(CCPointZero);
 	this->addChild(pMenu, 1);
-
 
 	// Now to create the BG
 	CCSprite *pSprite = CCSprite::create("HelloWorld.png");
@@ -68,9 +63,16 @@ bool TrexMainScene::init(){
 		ccp(visibleSize.width/2 + origin.x,
 			visibleSize.height/2 + origin.y));
 
+    auto *rotateAction = CCRotateBy::create(1.0f, 30.0f);
+    
+    auto *repeateAction = CCRepeatForever::create(rotateAction);
+    
 	// add that spriterizer
 	this->addChild(pSprite, 0);
 
+    //rotate that sprite
+    pSprite->runAction(repeateAction);
+    
 	this->setTouchEnabled(true);
 
 	return true;
