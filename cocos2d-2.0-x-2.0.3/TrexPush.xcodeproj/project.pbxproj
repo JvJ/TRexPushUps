@@ -253,6 +253,7 @@
 		52486821161A186E00F797EE /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486820161A186E00F797EE /* AppDelegate.cpp */; };
 		52486824161A186E00F797EE /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486823161A186E00F797EE /* HelloWorldScene.cpp */; };
 		52486826161A186E00F797EE /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 52486825161A186E00F797EE /* blocks.png */; };
+		5248685C161A1DCF00F797EE /* Box2DLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5248685A161A1DCF00F797EE /* Box2DLayer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -788,6 +789,8 @@
 		52486822161A186E00F797EE /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		52486823161A186E00F797EE /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		52486825161A186E00F797EE /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
+		5248685A161A1DCF00F797EE /* Box2DLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Box2DLayer.cpp; path = TRexPush/Classes/Box2DLayer.cpp; sourceTree = SOURCE_ROOT; };
+		5248685B161A1DCF00F797EE /* Box2DLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Box2DLayer.h; path = TRexPush/Classes/Box2DLayer.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1844,6 +1847,8 @@
 		5248681E161A186E00F797EE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5248685A161A1DCF00F797EE /* Box2DLayer.cpp */,
+				5248685B161A1DCF00F797EE /* Box2DLayer.h */,
 				5248681F161A186E00F797EE /* AppDelegate.h */,
 				52486820161A186E00F797EE /* AppDelegate.cpp */,
 				52486822161A186E00F797EE /* HelloWorldScene.h */,
@@ -2149,6 +2154,7 @@
 				5248681A161A186E00F797EE /* b2Rope.cpp in Sources */,
 				52486821161A186E00F797EE /* AppDelegate.cpp in Sources */,
 				52486824161A186E00F797EE /* HelloWorldScene.cpp in Sources */,
+				5248685C161A1DCF00F797EE /* Box2DLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2280,6 +2286,7 @@
 				5248682B161A186E00F797EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

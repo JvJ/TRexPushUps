@@ -1,4 +1,5 @@
 #include "HelloWorldScene.h"
+#include "Box2DLayer.h"
 
 using namespace cocos2d;
 
@@ -17,6 +18,10 @@ CCScene* HelloWorld::scene()
 
         // add layer as a child to scene
         scene->addChild(layer);
+        
+        Box2DLayer* boxLayer = new Box2DLayer();
+        scene->addChild(boxLayer, 1);
+        
     } while (0);
 
     // return the scene
