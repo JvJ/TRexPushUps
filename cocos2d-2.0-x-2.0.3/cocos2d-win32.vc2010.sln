@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestLua", "samples\TestLua\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorials", "samples\Tutorials\proj.win32\Tutorials.vcxproj", "{5A0A05D3-688E-47FA-BE8C-45D53AAE73EB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TRexPush.win32", "TRexPush\proj.win32\TRexPush.win32.vcxproj", "{242E77F2-95CE-4C5F-A6AD-9DC5A9781BFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -91,6 +93,10 @@ Global
 		{5A0A05D3-688E-47FA-BE8C-45D53AAE73EB}.Debug|Win32.Build.0 = Debug|Win32
 		{5A0A05D3-688E-47FA-BE8C-45D53AAE73EB}.Release|Win32.ActiveCfg = Release|Win32
 		{5A0A05D3-688E-47FA-BE8C-45D53AAE73EB}.Release|Win32.Build.0 = Release|Win32
+		{242E77F2-95CE-4C5F-A6AD-9DC5A9781BFF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{242E77F2-95CE-4C5F-A6AD-9DC5A9781BFF}.Debug|Win32.Build.0 = Debug|Win32
+		{242E77F2-95CE-4C5F-A6AD-9DC5A9781BFF}.Release|Win32.ActiveCfg = Release|Win32
+		{242E77F2-95CE-4C5F-A6AD-9DC5A9781BFF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
