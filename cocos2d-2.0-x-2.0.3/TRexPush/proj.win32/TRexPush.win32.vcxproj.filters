@@ -55,6 +55,9 @@
     <ClInclude Include="..\Classes\pugixml.hpp">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Box2DLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -70,6 +73,9 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\pugixml.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Box2DLayer.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
