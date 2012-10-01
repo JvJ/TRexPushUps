@@ -46,6 +46,12 @@
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\pugixml.hpp">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\pugiconfig.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

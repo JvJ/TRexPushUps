@@ -12,6 +12,13 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
                        LPTSTR    lpCmdLine,
                        int       nCmdShow)
 {
+
+	if (!lstrcmp(lpCmdLine, L"XMLTEST")){
+
+
+		exit(0);
+	}
+
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
@@ -34,4 +41,13 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 #endif
 
     return ret;
+}
+
+
+/**
+Run the xml tests!
+*/
+void xmlTests(char *filename){
+
+
 }
