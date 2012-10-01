@@ -1,8 +1,16 @@
 #include "main.h"
 #include "AppDelegate.h"
 #include "CCEGLView.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+
+#include "XMLTesting.h"
 
 USING_NS_CC;
+
+using namespace std;
+
 
 // uncomment below line, open debug console
 // #define USE_WIN32_CONSOLE
@@ -13,11 +21,8 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
                        int       nCmdShow)
 {
 
-	if (!lstrcmp(lpCmdLine, L"XMLTEST")){
 
 
-		exit(0);
-	}
 
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
@@ -29,12 +34,38 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
     freopen("CONOUT$", "w", stderr);
 #endif
 
+	{
+		ifstream input("xmlparams.txt", fstream::in);
+
+		string s;
+
+		input>>s;
+
+		cout<<"Here is S: "<<s<<endl;
+
+	if (s == "GO"){
+
+		input >> s;
+		xmlTests(s);
+
+		system("pause");
+
+		#ifdef USE_WIN32_CONSOLE
+			FreeConsole();
+		#endif
+
+		return 0;
+	}
+	}
+
+
     // create the application instance
     AppDelegate app;
     CCEGLView* eglView = CCEGLView::sharedOpenGLView();
     eglView->setFrameSize(480, 320);
 
     int ret = CCApplication::sharedApplication()->run();
+
 
 #ifdef USE_WIN32_CONSOLE
     FreeConsole();
@@ -44,10 +75,3 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 }
 
 
-/**
-Run the xml tests!
-*/
-void xmlTests(char *filename){
-
-
-}

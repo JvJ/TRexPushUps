@@ -46,10 +46,13 @@
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\pugixml.hpp">
+    <ClInclude Include="..\Classes\pugiconfig.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLTesting.h">
       <Filter>source</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\pugiconfig.hpp">
+    <ClInclude Include="..\Classes\pugixml.hpp">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
@@ -61,6 +64,12 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="CMLTesting.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\pugixml.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
