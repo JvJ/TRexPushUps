@@ -23,7 +23,7 @@ Box2DLayer::Box2DLayer()
  
     
     
-    CCLabelTTF *label = CCLabelTTF::create("Tap screen", "Marker Felt", 32);
+    CCLabelTTF *label = CCLabelTTF::create("TREX PUSHUPS", "Marker Felt", 32);
     addChild(label, 0);
     label->setColor(ccc3(0,0,255));
     label->setPosition(ccp( s.width/2, s.height-50));
@@ -61,10 +61,10 @@ void Box2DLayer::initPhysics()
     
     uint32 flags = 0;
     flags += b2Draw::e_shapeBit;
-            flags += b2Draw::e_jointBit;
+            /*flags += b2Draw::e_jointBit;
             flags += b2Draw::e_aabbBit;
             flags += b2Draw::e_pairBit;
-            flags += b2Draw::e_centerOfMassBit;
+            flags += b2Draw::e_centerOfMassBit;*/
     m_debugDraw->SetFlags(flags);
     
     
@@ -132,7 +132,7 @@ void Box2DLayer::ccTouchesEnded(CCSet* touches, CCEvent* event)
         
         CCPoint location = touch->getLocation();
         
-        //addNewSpriteAtPosition( location );
+        addNewSpriteAtPosition( location );
     }
 }
 
@@ -161,7 +161,7 @@ void Box2DLayer::addNewSpriteAtPosition(CCPoint p)
     //We have a 64x64 sprite sheet with 4 different 32x32 images.  The following code is
     //just randomly picking one of the images
     PhysicsSprite *sprite = new PhysicsSprite();
-    sprite->initWithFile("blocks.png");
+    sprite->init();
     //sprite->initWithTexture(m_pSpriteTexture, CCRectMake(32 * idx,32 * idy,32,32));
     sprite->autorelease();
     
