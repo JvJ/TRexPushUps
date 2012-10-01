@@ -8,6 +8,10 @@
 
 #include "Box2DLayer.h"
 
+#include "PhysicsSprite.h"
+
+#include "Constants.h"
+
 Box2DLayer::Box2DLayer()
 {
     setTouchEnabled( true );
@@ -17,6 +21,8 @@ Box2DLayer::Box2DLayer()
     // init physics
     this->initPhysics();
  
+    
+    
     CCLabelTTF *label = CCLabelTTF::create("Tap screen", "Marker Felt", 32);
     addChild(label, 0);
     label->setColor(ccc3(0,0,255));
@@ -50,14 +56,14 @@ void Box2DLayer::initPhysics()
     
     world->SetContinuousPhysics(true);
     
-    //     m_debugDraw = new GLESDebugDraw( PTM_RATIO );
-    //     world->SetDebugDraw(m_debugDraw);
+    m_debugDraw = new GLESDebugDraw( PTM_RATIO );
+    world->SetDebugDraw(m_debugDraw);
     
     uint32 flags = 0;
     flags += b2Draw::e_shapeBit;
-    //        flags += b2Draw::e_jointBit;
-    //        flags += b2Draw::e_aabbBit;
-    //        flags += b2Draw::e_pairBit;
+            flags += b2Draw::e_jointBit;
+            flags += b2Draw::e_aabbBit;
+            flags += b2Draw::e_pairBit;
             flags += b2Draw::e_centerOfMassBit;
     m_debugDraw->SetFlags(flags);
     
@@ -140,8 +146,49 @@ void Box2DLayer::update(float dt)
     int velocityIterations = 8;
     int positionIterations = 1;
     
+    world->DrawDebugData();
+    
     // Instruct the world to perform a single step of simulation. It is
     // generally best to keep the time step and iterations fixed.
     world->Step(dt, velocityIterations, positionIterations);
 }
+
+
+
+void Box2DLayer::addNewSpriteAtPosition(CCPoint p)
+{
+    CCLOG("Add sprite %0.2f x %02.f",p.x,p.y);
+    //We have a 64x64 sprite sheet with 4 different 32x32 images.  The following code is
+    //just randomly picking one of the images
+    PhysicsSprite *sprite = new PhysicsSprite();
+    sprite->initWithFile("blocks.png");
+    //sprite->initWithTexture(m_pSpriteTexture, CCRectMake(32 * idx,32 * idy,32,32));
+    sprite->autorelease();
+    
+    this->addChild(sprite);
+    
+    sprite->setPosition( CCPointMake( p.x, p.y) );
+    
+    // Define the dynamic body.
+    //Set up a 1m squared box in the physics world
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.position.Set(p.x/PTM_RATIO, p.y/PTM_RATIO);
+    
+    b2Body *body = world->CreateBody(&bodyDef);
+    
+    // Define another box shape for our dynamic body.
+    b2PolygonShape dynamicBox;
+    dynamicBox.SetAsBox(.5f, .5f);//These are mid points for our 1m box
+    
+    // Define the dynamic body fixture.
+    b2FixtureDef fixtureDef;
+    fixtureDef.shape = &dynamicBox;
+    fixtureDef.density = 1.0f;
+    fixtureDef.friction = 0.3f;
+    body->CreateFixture(&fixtureDef);
+    
+    sprite->setPhysicsBody(body);
+}
+
 

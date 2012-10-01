@@ -254,6 +254,9 @@
 		52486824161A186E00F797EE /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486823161A186E00F797EE /* HelloWorldScene.cpp */; };
 		52486826161A186E00F797EE /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 52486825161A186E00F797EE /* blocks.png */; };
 		5248685C161A1DCF00F797EE /* Box2DLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5248685A161A1DCF00F797EE /* Box2DLayer.cpp */; };
+		52486863161A209F00F797EE /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486861161A209F00F797EE /* GLES-Render.cpp */; };
+		52486867161A23EA00F797EE /* PhysicsSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486865161A23EA00F797EE /* PhysicsSprite.cpp */; };
+		5248686A161A24A900F797EE /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486869161A24A900F797EE /* Constants.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -791,6 +794,12 @@
 		52486825161A186E00F797EE /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
 		5248685A161A1DCF00F797EE /* Box2DLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Box2DLayer.cpp; path = TRexPush/Classes/Box2DLayer.cpp; sourceTree = SOURCE_ROOT; };
 		5248685B161A1DCF00F797EE /* Box2DLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Box2DLayer.h; path = TRexPush/Classes/Box2DLayer.h; sourceTree = SOURCE_ROOT; };
+		52486861161A209F00F797EE /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "GLES-Render.cpp"; path = "TRexPush/Classes/GLES-Render.cpp"; sourceTree = SOURCE_ROOT; };
+		52486862161A209F00F797EE /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "TRexPush/Classes/GLES-Render.h"; sourceTree = SOURCE_ROOT; };
+		52486865161A23EA00F797EE /* PhysicsSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhysicsSprite.cpp; path = TRexPush/PhysicsSprite.cpp; sourceTree = SOURCE_ROOT; };
+		52486866161A23EA00F797EE /* PhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhysicsSprite.h; path = TRexPush/PhysicsSprite.h; sourceTree = SOURCE_ROOT; };
+		52486868161A246800F797EE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = TRexPush/Constants.h; sourceTree = SOURCE_ROOT; };
+		52486869161A24A900F797EE /* Constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Constants.cpp; path = TRexPush/Constants.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1853,6 +1862,12 @@
 				52486820161A186E00F797EE /* AppDelegate.cpp */,
 				52486822161A186E00F797EE /* HelloWorldScene.h */,
 				52486823161A186E00F797EE /* HelloWorldScene.cpp */,
+				52486861161A209F00F797EE /* GLES-Render.cpp */,
+				52486862161A209F00F797EE /* GLES-Render.h */,
+				52486865161A23EA00F797EE /* PhysicsSprite.cpp */,
+				52486866161A23EA00F797EE /* PhysicsSprite.h */,
+				52486868161A246800F797EE /* Constants.h */,
+				52486869161A24A900F797EE /* Constants.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2155,6 +2170,9 @@
 				52486821161A186E00F797EE /* AppDelegate.cpp in Sources */,
 				52486824161A186E00F797EE /* HelloWorldScene.cpp in Sources */,
 				5248685C161A1DCF00F797EE /* Box2DLayer.cpp in Sources */,
+				52486863161A209F00F797EE /* GLES-Render.cpp in Sources */,
+				52486867161A23EA00F797EE /* PhysicsSprite.cpp in Sources */,
+				5248686A161A24A900F797EE /* Constants.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

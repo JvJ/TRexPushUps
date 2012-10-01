@@ -8,19 +8,17 @@
 
 #pragma once
 
-#include <iostream>
-
 #include "Box2D/Box2D.h"
 #include "cocos2d.h"
 
-#define PTM_RATIO 32
+#include "GLES-Render.h"
 
 using namespace cocos2d;
 
-
-
 class Box2DLayer : public CCLayer
 {
+    GLESDebugDraw* m_debugDraw;
+    
     b2World* world;
     
     
@@ -29,9 +27,13 @@ public: Box2DLayer();
     
     void initPhysics();
     void update(float dt);
-    
+    void addNewSpriteAtPosition(CCPoint p);
     
     virtual void ccTouchesEnded(CCSet* touches, CCEvent* event);
     virtual void draw();
     
 };
+
+
+
+

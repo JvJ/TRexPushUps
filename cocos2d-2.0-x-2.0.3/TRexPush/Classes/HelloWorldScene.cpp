@@ -13,14 +13,16 @@ CCScene* HelloWorld::scene()
         CC_BREAK_IF(! scene);
 
         // 'layer' is an autorelease object
-        HelloWorld *layer = HelloWorld::create();
-        CC_BREAK_IF(! layer);
+        //HelloWorld *layer = HelloWorld::create();
+        //CC_BREAK_IF(! layer);
 
         // add layer as a child to scene
-        scene->addChild(layer);
+        //scene->addChild(layer);
         
         Box2DLayer* boxLayer = new Box2DLayer();
         scene->addChild(boxLayer, 1);
+        
+        boxLayer->addNewSpriteAtPosition(ccp(100,100));
         
     } while (0);
 
