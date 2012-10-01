@@ -1,5 +1,7 @@
 #include "LevelSelectionLayer.h"
 
+#include "GameLayer.h"
+
 #include "CCDictionary.h"
 #include "Constants.h"
 using namespace cocos2d;
@@ -117,8 +119,7 @@ bool LevelSelectionLayer::init()
 
 void LevelSelectionLayer::levelClickCallback(CCObject * pSender)
 {
-    
-    CCDirector::sharedDirector()->replaceScene(LevelSelectionLayer::scene());
+    CCDirector::sharedDirector()->replaceScene(GameLayer::scene());
 }
 
 

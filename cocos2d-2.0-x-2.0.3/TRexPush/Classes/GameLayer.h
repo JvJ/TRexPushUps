@@ -6,9 +6,19 @@
 //
 //
 
-#ifndef __TrexPush__GameLayer__
-#define __TrexPush__GameLayer__
+#pragma once
 
-#include <iostream>
+#include "cocos2d.h"
 
-#endif /* defined(__TrexPush__GameLayer__) */
+#include "Box2DLayer.h"
+#include "SimpleAudioEngine.h"
+
+using namespace cocos2d;
+
+class GameLayer : public Box2DLayer
+{
+public:
+    static CCScene* scene();
+    
+    CREATE_FUNC(GameLayer);
+};
