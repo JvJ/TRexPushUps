@@ -1,6 +1,8 @@
 #include "HelloWorldScene.h"
 #include "Box2DLayer.h"
 
+#include "CCDictionary.h"
+
 using namespace cocos2d;
 
 CCScene* HelloWorld::scene()

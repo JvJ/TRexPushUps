@@ -147,10 +147,10 @@ void Box2DLayer::update(float dt)
     int positionIterations = 1;
     
     world->DrawDebugData();
-    
     // Instruct the world to perform a single step of simulation. It is
     // generally best to keep the time step and iterations fixed.
     world->Step(dt, velocityIterations, positionIterations);
+    
 }
 
 
