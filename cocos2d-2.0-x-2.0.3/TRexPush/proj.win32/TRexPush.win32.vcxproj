@@ -149,19 +149,27 @@
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\Box2DLayer.h" />
+    <ClInclude Include="..\Classes\Constants.h" />
+    <ClInclude Include="..\Classes\GLES-Render.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\PhysicsSprite.h" />
     <ClInclude Include="..\Classes\pugiconfig.hpp" />
     <ClInclude Include="..\Classes\pugixml.hpp" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SVGLoader.h" />
     <ClInclude Include="XMLTesting.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\Box2DLayer.cpp" />
+    <ClCompile Include="..\Classes\Constants.cpp" />
+    <ClCompile Include="..\Classes\GLES-Render.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\PhysicsSprite.cpp" />
     <ClCompile Include="..\Classes\pugixml.cpp" />
-    <ClCompile Include="CMLTesting.cpp" />
+    <ClCompile Include="SVGLoader.cpp" />
+    <ClCompile Include="XMLTesting.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

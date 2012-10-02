@@ -58,6 +58,18 @@
     <ClInclude Include="..\Classes\Box2DLayer.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Constants.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GLES-Render.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PhysicsSprite.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="SVGLoader.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -69,13 +81,25 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="CMLTesting.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\pugixml.cpp">
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Box2DLayer.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Constants.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GLES-Render.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PhysicsSprite.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLTesting.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="SVGLoader.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
