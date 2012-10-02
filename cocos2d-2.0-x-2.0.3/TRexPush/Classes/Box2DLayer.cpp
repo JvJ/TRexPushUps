@@ -132,7 +132,7 @@ void Box2DLayer::ccTouchesEnded(CCSet* touches, CCEvent* event)
         
         CCPoint location = touch->getLocation();
         
-        //addNewSpriteAtPosition( location );
+        addNewSpriteAtPosition( location );
     }
 }
 

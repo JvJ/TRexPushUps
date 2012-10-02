@@ -5,6 +5,7 @@ using namespace cocos2d;
 
 CCScene* HelloWorld::scene()
 {
+
     CCScene * scene = NULL;
     do 
     {
