@@ -251,7 +251,6 @@
 		52486816161A186E00F797EE /* b2WheelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486815161A186E00F797EE /* b2WheelJoint.cpp */; };
 		5248681A161A186E00F797EE /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486819161A186E00F797EE /* b2Rope.cpp */; };
 		52486821161A186E00F797EE /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486820161A186E00F797EE /* AppDelegate.cpp */; };
-		52486824161A186E00F797EE /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486823161A186E00F797EE /* HelloWorldScene.cpp */; };
 		52486826161A186E00F797EE /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 52486825161A186E00F797EE /* blocks.png */; };
 		5248685C161A1DCF00F797EE /* Box2DLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5248685A161A1DCF00F797EE /* Box2DLayer.cpp */; };
 		52486863161A209F00F797EE /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486861161A209F00F797EE /* GLES-Render.cpp */; };
@@ -794,8 +793,6 @@
 		5248681D161A186E00F797EE /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		5248681F161A186E00F797EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		52486820161A186E00F797EE /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		52486822161A186E00F797EE /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		52486823161A186E00F797EE /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		52486825161A186E00F797EE /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
 		5248685A161A1DCF00F797EE /* Box2DLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Box2DLayer.cpp; path = TRexPush/Classes/Box2DLayer.cpp; sourceTree = SOURCE_ROOT; };
 		5248685B161A1DCF00F797EE /* Box2DLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Box2DLayer.h; path = TRexPush/Classes/Box2DLayer.h; sourceTree = SOURCE_ROOT; };
@@ -1877,8 +1874,6 @@
 				5248688C161A3F4200F797EE /* Gameplay */,
 				5248681F161A186E00F797EE /* AppDelegate.h */,
 				52486820161A186E00F797EE /* AppDelegate.cpp */,
-				52486822161A186E00F797EE /* HelloWorldScene.h */,
-				52486823161A186E00F797EE /* HelloWorldScene.cpp */,
 				52486885161A2FAB00F797EE /* GameLayer.cpp */,
 				52486886161A2FAB00F797EE /* GameLayer.h */,
 			);
@@ -2234,7 +2229,6 @@
 				52486816161A186E00F797EE /* b2WheelJoint.cpp in Sources */,
 				5248681A161A186E00F797EE /* b2Rope.cpp in Sources */,
 				52486821161A186E00F797EE /* AppDelegate.cpp in Sources */,
-				52486824161A186E00F797EE /* HelloWorldScene.cpp in Sources */,
 				5248685C161A1DCF00F797EE /* Box2DLayer.cpp in Sources */,
 				52486863161A209F00F797EE /* GLES-Render.cpp in Sources */,
 				52486870161A273000F797EE /* PhysicsSprite.cpp in Sources */,
