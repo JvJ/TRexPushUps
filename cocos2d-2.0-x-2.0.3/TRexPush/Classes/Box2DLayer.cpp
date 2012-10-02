@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //
 //  Box2DLayer.cpp
 //  TrexPush
@@ -387,5 +387,3 @@ void Box2DLayer::addNewSpriteAtPosition(CCPoint p)
     sprite->setPhysicsBody(body);
 }
 
-
->>>>>>> 0876c818297efc08ad90b94dcabdfc6672882f4b

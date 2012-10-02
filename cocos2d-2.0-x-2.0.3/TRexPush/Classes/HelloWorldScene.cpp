@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "HelloWorldScene.h"
 #include "Box2DLayer.h"
 
@@ -210,5 +209,3 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
     // "close" menu item clicked
     CCDirector::sharedDirector()->end();
 }
-
->>>>>>> 0876c818297efc08ad90b94dcabdfc6672882f4b
