@@ -103,7 +103,7 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
     CCDirector::sharedDirector()->end();
 }
 
-=======
+
 #include "HelloWorldScene.h"
 #include "Box2DLayer.h"
 
