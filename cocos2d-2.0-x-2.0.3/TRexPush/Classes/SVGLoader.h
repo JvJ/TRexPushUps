@@ -7,7 +7,7 @@
 #include <map>
 #include <vector>
 #include "pugixml.hpp"
-#include "Box2D\Box2D.h"
+#include <Box2D.h>
 
 
 class SVGLoader: public pugi::xml_tree_walker
@@ -17,7 +17,7 @@ class SVGLoader: public pugi::xml_tree_walker
 
 	pugi::xml_document doc;
 
-	std::map<string, vector<b2Vec2>> paths;
+	std::map<string, vector<b2Vec2> > paths;
 
 	void parseVertices(string init, vector<b2Vec2> &vec);
 

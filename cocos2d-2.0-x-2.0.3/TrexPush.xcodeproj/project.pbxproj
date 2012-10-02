@@ -261,6 +261,7 @@
 		52486881161A2F8500F797EE /* StageSelectionLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5248687F161A2F8500F797EE /* StageSelectionLayer.cpp */; };
 		52486884161A2F9700F797EE /* LevelSelectionLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486882161A2F9700F797EE /* LevelSelectionLayer.cpp */; };
 		52486887161A2FAC00F797EE /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486885161A2FAB00F797EE /* GameLayer.cpp */; };
+		525565B5161B69690065CD3A /* SVGLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525565B3161B69690065CD3A /* SVGLoader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -812,6 +813,8 @@
 		52486883161A2F9700F797EE /* LevelSelectionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSelectionLayer.h; path = TRexPush/Classes/LevelSelectionLayer.h; sourceTree = SOURCE_ROOT; };
 		52486885161A2FAB00F797EE /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameLayer.cpp; path = TRexPush/Classes/GameLayer.cpp; sourceTree = SOURCE_ROOT; };
 		52486886161A2FAB00F797EE /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameLayer.h; path = TRexPush/Classes/GameLayer.h; sourceTree = SOURCE_ROOT; };
+		525565B3161B69690065CD3A /* SVGLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SVGLoader.cpp; path = TRexPush/Classes/SVGLoader.cpp; sourceTree = SOURCE_ROOT; };
+		525565B4161B69690065CD3A /* SVGLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVGLoader.h; path = TRexPush/Classes/SVGLoader.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1921,6 +1924,8 @@
 		5248688F161A3F6D00F797EE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				525565B3161B69690065CD3A /* SVGLoader.cpp */,
+				525565B4161B69690065CD3A /* SVGLoader.h */,
 				52486861161A209F00F797EE /* GLES-Render.cpp */,
 				52486862161A209F00F797EE /* GLES-Render.h */,
 				52486872161A27AE00F797EE /* Constants.cpp */,
@@ -2237,6 +2242,7 @@
 				52486881161A2F8500F797EE /* StageSelectionLayer.cpp in Sources */,
 				52486884161A2F9700F797EE /* LevelSelectionLayer.cpp in Sources */,
 				52486887161A2FAC00F797EE /* GameLayer.cpp in Sources */,
+				525565B5161B69690065CD3A /* SVGLoader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
