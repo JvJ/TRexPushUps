@@ -258,6 +258,10 @@
 		52486870161A273000F797EE /* PhysicsSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5248686B161A272F00F797EE /* PhysicsSprite.cpp */; };
 		52486871161A273000F797EE /* pugixml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5248686E161A272F00F797EE /* pugixml.cpp */; };
 		52486874161A27AE00F797EE /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486872161A27AE00F797EE /* Constants.cpp */; };
+		52486879161A2B3300F797EE /* LevelData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52486878161A2B3300F797EE /* LevelData.plist */; };
+		52486881161A2F8500F797EE /* StageSelectionLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5248687F161A2F8500F797EE /* StageSelectionLayer.cpp */; };
+		52486884161A2F9700F797EE /* LevelSelectionLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486882161A2F9700F797EE /* LevelSelectionLayer.cpp */; };
+		52486887161A2FAC00F797EE /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486885161A2FAB00F797EE /* GameLayer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -804,6 +808,13 @@
 		5248686F161A272F00F797EE /* pugixml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = pugixml.hpp; path = TRexPush/Classes/pugixml.hpp; sourceTree = SOURCE_ROOT; };
 		52486872161A27AE00F797EE /* Constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Constants.cpp; path = TRexPush/Classes/Constants.cpp; sourceTree = SOURCE_ROOT; };
 		52486873161A27AE00F797EE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = TRexPush/Classes/Constants.h; sourceTree = SOURCE_ROOT; };
+		52486878161A2B3300F797EE /* LevelData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LevelData.plist; path = TRexPush/Resources/LevelData.plist; sourceTree = SOURCE_ROOT; };
+		5248687F161A2F8500F797EE /* StageSelectionLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StageSelectionLayer.cpp; path = TRexPush/Classes/StageSelectionLayer.cpp; sourceTree = SOURCE_ROOT; };
+		52486880161A2F8500F797EE /* StageSelectionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StageSelectionLayer.h; path = TRexPush/Classes/StageSelectionLayer.h; sourceTree = SOURCE_ROOT; };
+		52486882161A2F9700F797EE /* LevelSelectionLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LevelSelectionLayer.cpp; path = TRexPush/Classes/LevelSelectionLayer.cpp; sourceTree = SOURCE_ROOT; };
+		52486883161A2F9700F797EE /* LevelSelectionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSelectionLayer.h; path = TRexPush/Classes/LevelSelectionLayer.h; sourceTree = SOURCE_ROOT; };
+		52486885161A2FAB00F797EE /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameLayer.cpp; path = TRexPush/Classes/GameLayer.cpp; sourceTree = SOURCE_ROOT; };
+		52486886161A2FAB00F797EE /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameLayer.h; path = TRexPush/Classes/GameLayer.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -873,6 +884,7 @@
 		524864F2161A186900F797EE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				52486875161A2A0B00F797EE /* LevelData */,
 				524864F3161A186900F797EE /* CloseNormal.png */,
 				524864F5161A186900F797EE /* CloseSelected.png */,
 				524864F7161A186900F797EE /* Default.png */,
@@ -1860,23 +1872,69 @@
 		5248681E161A186E00F797EE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				52486872161A27AE00F797EE /* Constants.cpp */,
-				52486873161A27AE00F797EE /* Constants.h */,
-				5248686B161A272F00F797EE /* PhysicsSprite.cpp */,
-				5248686C161A272F00F797EE /* PhysicsSprite.h */,
-				5248686D161A272F00F797EE /* pugiconfig.hpp */,
-				5248686E161A272F00F797EE /* pugixml.cpp */,
-				5248686F161A272F00F797EE /* pugixml.hpp */,
-				5248685A161A1DCF00F797EE /* Box2DLayer.cpp */,
-				5248685B161A1DCF00F797EE /* Box2DLayer.h */,
+				5248688D161A3F4800F797EE /* Menus */,
+				5248688F161A3F6D00F797EE /* Supporting Files */,
+				5248688C161A3F4200F797EE /* Gameplay */,
 				5248681F161A186E00F797EE /* AppDelegate.h */,
 				52486820161A186E00F797EE /* AppDelegate.cpp */,
 				52486822161A186E00F797EE /* HelloWorldScene.h */,
 				52486823161A186E00F797EE /* HelloWorldScene.cpp */,
-				52486861161A209F00F797EE /* GLES-Render.cpp */,
-				52486862161A209F00F797EE /* GLES-Render.h */,
+				52486885161A2FAB00F797EE /* GameLayer.cpp */,
+				52486886161A2FAB00F797EE /* GameLayer.h */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		52486875161A2A0B00F797EE /* LevelData */ = {
+			isa = PBXGroup;
+			children = (
+				52486878161A2B3300F797EE /* LevelData.plist */,
+			);
+			name = LevelData;
+			sourceTree = "<group>";
+		};
+		5248688C161A3F4200F797EE /* Gameplay */ = {
+			isa = PBXGroup;
+			children = (
+				5248688E161A3F5900F797EE /* Physics */,
+			);
+			name = Gameplay;
+			sourceTree = "<group>";
+		};
+		5248688D161A3F4800F797EE /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				5248687F161A2F8500F797EE /* StageSelectionLayer.cpp */,
+				52486880161A2F8500F797EE /* StageSelectionLayer.h */,
+				52486882161A2F9700F797EE /* LevelSelectionLayer.cpp */,
+				52486883161A2F9700F797EE /* LevelSelectionLayer.h */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
+		5248688E161A3F5900F797EE /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				5248686B161A272F00F797EE /* PhysicsSprite.cpp */,
+				5248686C161A272F00F797EE /* PhysicsSprite.h */,
+				5248685A161A1DCF00F797EE /* Box2DLayer.cpp */,
+				5248685B161A1DCF00F797EE /* Box2DLayer.h */,
+			);
+			name = Physics;
+			sourceTree = "<group>";
+		};
+		5248688F161A3F6D00F797EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52486861161A209F00F797EE /* GLES-Render.cpp */,
+				52486862161A209F00F797EE /* GLES-Render.h */,
+				52486872161A27AE00F797EE /* Constants.cpp */,
+				52486873161A27AE00F797EE /* Constants.h */,
+				5248686D161A272F00F797EE /* pugiconfig.hpp */,
+				5248686E161A272F00F797EE /* pugixml.cpp */,
+				5248686F161A272F00F797EE /* pugixml.hpp */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1942,6 +2000,7 @@
 				52486508161A186900F797EE /* iTunesArtwork in Resources */,
 				5248659A161A186A00F797EE /* ChangeLog in Resources */,
 				52486826161A186E00F797EE /* blocks.png in Resources */,
+				52486879161A2B3300F797EE /* LevelData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2181,6 +2240,9 @@
 				52486870161A273000F797EE /* PhysicsSprite.cpp in Sources */,
 				52486871161A273000F797EE /* pugixml.cpp in Sources */,
 				52486874161A27AE00F797EE /* Constants.cpp in Sources */,
+				52486881161A2F8500F797EE /* StageSelectionLayer.cpp in Sources */,
+				52486884161A2F9700F797EE /* LevelSelectionLayer.cpp in Sources */,
+				52486887161A2FAC00F797EE /* GameLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
