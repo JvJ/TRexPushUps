@@ -25,7 +25,7 @@ public:
 
 	virtual bool for_each(pugi::xml_node &node);
 
-	b2EdgeShape *createEdge(string obj_id);
+	b2PolygonShape *createEdge(string obj_id);
 
 	inline vector<b2Vec2> &operator[](string pathName){
 		return paths[pathName];

@@ -36,6 +36,9 @@ Box2DLayer::~Box2DLayer()
     delete world;
     world = NULL;
     
+	if (svgLoader){
+		delete svgLoader;
+	}
     //delete m_debugDraw;
 }
 
@@ -132,7 +135,8 @@ void Box2DLayer::ccTouchesEnded(CCSet* touches, CCEvent* event)
         
         CCPoint location = touch->getLocation();
         
-        addNewSpriteAtPosition( location );
+        //addNewSpriteAtPosition( location );
+		addNewObjectAtPosition("STAR", location);
     }
 }
 
@@ -191,3 +195,39 @@ void Box2DLayer::addNewSpriteAtPosition(CCPoint p)
     sprite->setPhysicsBody(body);
 }
 
+
+void Box2DLayer::addNewObjectAtPosition(std::string key, CCPoint p)
+{
+    CCLOG("Add sprite %0.2f x %02.f",p.x,p.y);
+
+    //We have a 64x64 sprite sheet with 4 different 32x32 images.  The following code is
+    //just randomly picking one of the images
+    PhysicsSprite *sprite = new PhysicsSprite();
+    sprite->init();
+    //sprite->initWithTexture(m_pSpriteTexture, CCRectMake(32 * idx,32 * idy,32,32));
+    sprite->autorelease();
+    
+    this->addChild(sprite);
+    
+    sprite->setPosition( CCPointMake( p.x, p.y) );
+    
+    // Define the dynamic body.
+    //Set up a 1m squared box in the physics world
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.position.Set(p.x/PTM_RATIO, p.y/PTM_RATIO);
+    
+    b2Body *body = world->CreateBody(&bodyDef);
+    
+    // Define another box shape for our dynamic body.
+	auto *pShape = svgLoader->createEdge(key);
+    
+    // Define the dynamic body fixture.
+    b2FixtureDef fixtureDef;
+    fixtureDef.shape = pShape;
+    fixtureDef.density = 1.0f;
+    fixtureDef.friction = 0.3f;
+    body->CreateFixture(&fixtureDef);
+    
+    sprite->setPhysicsBody(body);
+}

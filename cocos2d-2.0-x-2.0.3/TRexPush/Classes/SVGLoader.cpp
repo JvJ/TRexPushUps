@@ -41,6 +41,22 @@ void SVGLoader::parseVertices(string init, vector<b2Vec2> &vec){
 		}
 	}
 
+// Helper method to pull vertices near the origin
+void adjustVertices(vector<b2Vec2> &vec){
+
+	// First pass to get the average
+	b2Vec2 avg = b2Vec2_zero;
+	for(auto itr = vec.begin(); itr != vec.end(); itr++){
+		avg += *itr;
+	}
+
+	avg *= 1.0f/(float)vec.size();
+
+	for(auto itr = vec.begin(); itr != vec.end(); itr++){
+		(*itr) -= avg;
+	}
+}
+
 bool SVGLoader::for_each(xml_node &node){
 
 	
@@ -55,6 +71,7 @@ bool SVGLoader::for_each(xml_node &node){
 		paths[id] = vector<b2Vec2>();
 
 		parseVertices(vs, paths[id]);
+		adjustVertices(paths[id]);
 			
 			// End the traversal
 			return false;
@@ -64,15 +81,15 @@ bool SVGLoader::for_each(xml_node &node){
 		return true;
 }
 
-b2EdgeShape *SVGLoader::createEdge(string obj_id){
+b2PolygonShape *SVGLoader::createEdge(string obj_id){
 
 	auto &vec = paths[obj_id];
 
-	b2EdgeShape *ret = new b2EdgeShape();
+	//b2EdgeShape *ret = new b2EdgeShape();
+	b2PolygonShape *ret = new b2PolygonShape();
 
-	for (auto itr = vec.begin(); itr != vec.end()-1;){
-		ret->Set(*itr, *(++itr));
-	}
+	ret->Set(vec.data(), vec.size());
+
 
 	return ret;
 }
