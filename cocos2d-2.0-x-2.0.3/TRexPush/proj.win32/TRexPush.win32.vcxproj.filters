@@ -43,9 +43,6 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\pugiconfig.hpp">
       <Filter>include</Filter>
     </ClInclude>
@@ -67,7 +64,16 @@
     <ClInclude Include="..\Classes\PhysicsSprite.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="SVGLoader.h">
+    <ClInclude Include="..\Classes\SVGLoader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StageSelectionLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelSelectionLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLayer.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
@@ -76,9 +82,6 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\AppDelegate.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\pugixml.cpp">
@@ -93,13 +96,22 @@
     <ClCompile Include="..\Classes\GLES-Render.cpp">
       <Filter>include</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\PhysicsSprite.cpp">
-      <Filter>include</Filter>
-    </ClCompile>
     <ClCompile Include="XMLTesting.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="SVGLoader.cpp">
+    <ClCompile Include="..\Classes\SVGLoader.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StageSelectionLayer.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelSelectionLayer.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLayer.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PhysicsSprite.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
