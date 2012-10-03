@@ -12,6 +12,12 @@
 				<dict>
 					<key>NAME</key>
 					<string>First Level</string>
+          <key>Shapes</key>
+          <array>
+            <dict>
+              <key></key>
+            </dict>
+          </array>
 					<key>TREX</key>
 					<dict>
 						<key>ARMS</key>

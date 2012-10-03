@@ -19,6 +19,9 @@ class GameLayer : public Box2DLayer
 {
 public:
     static CCScene* scene();
+	static CCScene* scene(int stage, int level);
+
+	void initializeLayerWithLevelData(CCDictionary *dict);
     
     CREATE_FUNC(GameLayer);
 };

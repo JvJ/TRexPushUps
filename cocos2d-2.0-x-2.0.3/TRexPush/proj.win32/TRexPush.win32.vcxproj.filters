@@ -30,6 +30,57 @@
     <None Include="..\Resources\xmlparams.txt">
       <Filter>resource</Filter>
     </None>
+    <None Include="..\Resources\blocks.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Default.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Icon.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Icon%402x.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Icon-72.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Icon-Small.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Icon-Small%402x.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Icon-Small-50.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Info.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\iTunesArtwork">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\LevelData.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\riggamarole.svg">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\star.svg">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\starshape.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\starshape.xml">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\testxml.xml">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\tritest.svg">
+      <Filter>resource</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TRexPush.rc">

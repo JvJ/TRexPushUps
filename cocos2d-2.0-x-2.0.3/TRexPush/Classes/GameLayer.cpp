@@ -35,3 +35,13 @@ CCScene* GameLayer::scene()
     // return the scene
     return scene;
 }
+
+
+CCScene* GameLayer::scene(int stage, int level){
+	return NULL;
+}
+
+void GameLayer::initializeLayerWithLevelData(CCDictionary *dict){
+
+	
+}

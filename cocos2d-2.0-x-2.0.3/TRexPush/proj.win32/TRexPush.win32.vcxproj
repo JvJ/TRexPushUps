@@ -138,9 +138,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="..\Resources\blocks.png" />
     <None Include="..\Resources\CloseNormal.png" />
     <None Include="..\Resources\CloseSelected.png" />
+    <None Include="..\Resources\Default.png" />
     <None Include="..\Resources\HelloWorld.png" />
+    <None Include="..\Resources\Icon%402x.png" />
+    <None Include="..\Resources\Icon-72.png" />
+    <None Include="..\Resources\Icon-Small%402x.png" />
+    <None Include="..\Resources\Icon-Small-50.png" />
+    <None Include="..\Resources\Icon-Small.png" />
+    <None Include="..\Resources\Icon.png" />
+    <None Include="..\Resources\Info.plist" />
+    <None Include="..\Resources\iTunesArtwork" />
+    <None Include="..\Resources\LevelData.plist" />
+    <None Include="..\Resources\riggamarole.svg" />
+    <None Include="..\Resources\star.svg" />
+    <None Include="..\Resources\starshape.plist" />
+    <None Include="..\Resources\starshape.xml" />
+    <None Include="..\Resources\testxml.xml" />
+    <None Include="..\Resources\tritest.svg" />
     <None Include="..\Resources\xmlparams.txt" />
     <None Include="res\TRexPush.ico" />
   </ItemGroup>
