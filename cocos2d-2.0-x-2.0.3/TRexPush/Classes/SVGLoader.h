@@ -7,7 +7,7 @@
 #include <map>
 #include <vector>
 #include "pugixml.hpp"
-#include <Box2D.h>
+#include "Box2D/Box2D.h"
 
 
 class SVGLoader: public pugi::xml_tree_walker
