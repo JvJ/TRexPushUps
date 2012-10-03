@@ -12,6 +12,8 @@
 
 #include "Constants.h"
 
+#include "GB2ShapeCache.h"
+
 Box2DLayer::Box2DLayer()
 {
     setTouchEnabled( true );
@@ -33,6 +35,7 @@ Box2DLayer::Box2DLayer()
 
 Box2DLayer::~Box2DLayer()
 {
+
     delete world;
     world = NULL;
     
@@ -99,6 +102,9 @@ void Box2DLayer::initPhysics()
     // right
     groundBox.Set(b2Vec2(s.width/PTM_RATIO,s.height/PTM_RATIO), b2Vec2(s.width/PTM_RATIO,0));
     groundBody->CreateFixture(&groundBox,0);
+
+	//TODO: TESTING
+	SHAPE_CACHE->addShapesWithFile("starshape.plist");
 }
 
 void Box2DLayer::draw()
@@ -220,14 +226,16 @@ void Box2DLayer::addNewObjectAtPosition(std::string key, CCPoint p)
     b2Body *body = world->CreateBody(&bodyDef);
     
     // Define another box shape for our dynamic body.
-	auto *pShape = svgLoader->createEdge(key);
+	//auto *pShape = svgLoader->createEdge(key);
     
+	SHAPE_CACHE->addFixturesToBody(body, "STAR");
+
     // Define the dynamic body fixture.
-    b2FixtureDef fixtureDef;
+    /*b2FixtureDef fixtureDef;
     fixtureDef.shape = pShape;
     fixtureDef.density = 1.0f;
     fixtureDef.friction = 0.3f;
-    body->CreateFixture(&fixtureDef);
+    body->CreateFixture(&fixtureDef);*/
     
     sprite->setPhysicsBody(body);
 }

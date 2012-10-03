@@ -141,6 +141,7 @@
     <None Include="..\Resources\CloseNormal.png" />
     <None Include="..\Resources\CloseSelected.png" />
     <None Include="..\Resources\HelloWorld.png" />
+    <None Include="..\Resources\xmlparams.txt" />
     <None Include="res\TRexPush.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +152,8 @@
     <ClInclude Include="..\Classes\Box2DLayer.h" />
     <ClInclude Include="..\Classes\Constants.h" />
     <ClInclude Include="..\Classes\GameLayer.h" />
+    <ClInclude Include="..\Classes\GB2Config.h" />
+    <ClInclude Include="..\Classes\GB2ShapeCache.h" />
     <ClInclude Include="..\Classes\GLES-Render.h" />
     <ClInclude Include="..\Classes\LevelSelectionLayer.h" />
     <ClInclude Include="..\Classes\PhysicsSprite.h" />
@@ -167,6 +170,7 @@
     <ClCompile Include="..\Classes\Box2DLayer.cpp" />
     <ClCompile Include="..\Classes\Constants.cpp" />
     <ClCompile Include="..\Classes\GameLayer.cpp" />
+    <ClCompile Include="..\Classes\GB2ShapeCache.cpp" />
     <ClCompile Include="..\Classes\GLES-Render.cpp" />
     <ClCompile Include="..\Classes\LevelSelectionLayer.cpp" />
     <ClCompile Include="..\Classes\PhysicsSprite.cpp" />

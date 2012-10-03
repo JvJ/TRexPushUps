@@ -27,6 +27,9 @@
     <None Include="..\Resources\HelloWorld.png">
       <Filter>resource</Filter>
     </None>
+    <None Include="..\Resources\xmlparams.txt">
+      <Filter>resource</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TRexPush.rc">
@@ -76,6 +79,12 @@
     <ClInclude Include="..\Classes\GameLayer.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\GB2ShapeCache.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GB2Config.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -112,6 +121,9 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\PhysicsSprite.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GB2ShapeCache.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

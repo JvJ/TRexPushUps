@@ -6,9 +6,13 @@
 #include "cocos2d.h"
 #include "Box2D\Box2D.h"
 #include "SVGLoader.h"
+#include "cocos2d.h"
+#include "CCDictionary.h"
+#include "GB2ShapeCache.h"
 
 using namespace std;
 using namespace pugi;
+USING_NS_CC;
 
 class tri_test_walker: public xml_tree_walker
 {
@@ -65,20 +69,41 @@ public:
 void xmlTests(std::string filename){
 
 
-	SVGLoader walker(filename);
+	//SVGLoader walker(filename);
 
 
-	for (auto itr = walker["TRI_OBJ"].begin();
+	/*for (auto itr = walker["TRI_OBJ"].begin();
 		itr != walker["TRI_OBJ"].end();
 		itr++){
 
 			cout<<"("<<itr->x<<", "<<itr->y<<"), ";
-	}
-	cout<<endl;
+	}*/
+	//cout<<endl;
 
+	/*
+	auto *dict = CCDictionary::createWithContentsOfFile("starshape.plist");
+	CCDictElement *el;
 
-
+	CCDICT_FOREACH(dict, el){
+		cout<<el->getStrKey()<<endl;
+		
+		auto *next = dynamic_cast<CCDictionary *>(el->getObject());
+		if (next){
+			CCDictElement *eel;
+			CCDICT_FOREACH(next, eel){
+				cout<<"\t"<<eel->getStrKey()<<endl;
+			}
+		}
+	}*/
 
 	//doc.save(std::cout);
+
+	
+	
+
+	gbox2d::GB2ShapeCache::sharedGB2ShapeCache()->addShapesWithFile("starshape.plist");
+
+	;
+
 
 }
