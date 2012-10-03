@@ -39,9 +39,6 @@ Box2DLayer::~Box2DLayer()
     delete world;
     world = NULL;
     
-	if (svgLoader){
-		delete svgLoader;
-	}
     //delete m_debugDraw;
 }
 

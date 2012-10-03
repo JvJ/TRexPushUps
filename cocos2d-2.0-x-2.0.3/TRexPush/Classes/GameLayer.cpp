@@ -25,7 +25,6 @@ CCScene* GameLayer::scene()
         //scene->addChild(layer);
         
         GameLayer* gameLayer = new GameLayer();
-		gameLayer->loadSVG("star.svg");
         scene->addChild(gameLayer, 1);
         
         gameLayer->addNewSpriteAtPosition(ccp(100,100));
