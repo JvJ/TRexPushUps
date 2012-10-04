@@ -10,14 +10,23 @@
 			<key>LEVELS</key>
 			<array>
 				<dict>
+					<key>SHAPEFILE</key>
+					<string>starshape.plist</string>
+					<key>SHAPES</key>
+					<array>
+						<dict>
+							<key>IMAGE</key>
+							<string>CloseNormal.png</string>
+							<key>POS_X</key>
+							<integer>0</integer>
+							<key>POS_Y</key>
+							<integer>0</integer>
+							<key>ID</key>
+							<string>STAR</string>
+						</dict>
+					</array>
 					<key>NAME</key>
 					<string>First Level</string>
-          <key>Shapes</key>
-          <array>
-            <dict>
-              <key></key>
-            </dict>
-          </array>
 					<key>TREX</key>
 					<dict>
 						<key>ARMS</key>

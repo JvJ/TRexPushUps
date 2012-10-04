@@ -262,6 +262,7 @@
 		52486884161A2F9700F797EE /* LevelSelectionLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486882161A2F9700F797EE /* LevelSelectionLayer.cpp */; };
 		52486887161A2FAC00F797EE /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52486885161A2FAB00F797EE /* GameLayer.cpp */; };
 		52A0831F161CDD9E0090F60E /* GB2ShapeCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52A0831D161CDD9D0090F60E /* GB2ShapeCache.cpp */; };
+		52A08325161CDEEB0090F60E /* starshape.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52A08324161CDEEB0090F60E /* starshape.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -816,6 +817,7 @@
 		52A0831C161CDD9D0090F60E /* GB2Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GB2Config.h; path = TRexPush/Classes/GB2Config.h; sourceTree = SOURCE_ROOT; };
 		52A0831D161CDD9D0090F60E /* GB2ShapeCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GB2ShapeCache.cpp; path = TRexPush/Classes/GB2ShapeCache.cpp; sourceTree = SOURCE_ROOT; };
 		52A0831E161CDD9D0090F60E /* GB2ShapeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GB2ShapeCache.h; path = TRexPush/Classes/GB2ShapeCache.h; sourceTree = SOURCE_ROOT; };
+		52A08324161CDEEB0090F60E /* starshape.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = starshape.plist; path = TRexPush/Resources/starshape.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1873,6 +1875,7 @@
 		5248681E161A186E00F797EE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				52A08324161CDEEB0090F60E /* starshape.plist */,
 				52A0831C161CDD9D0090F60E /* GB2Config.h */,
 				52A0831D161CDD9D0090F60E /* GB2ShapeCache.cpp */,
 				52A0831E161CDD9D0090F60E /* GB2ShapeCache.h */,
@@ -2003,6 +2006,7 @@
 				5248659A161A186A00F797EE /* ChangeLog in Resources */,
 				52486826161A186E00F797EE /* blocks.png in Resources */,
 				52486879161A2B3300F797EE /* LevelData.plist in Resources */,
+				52A08325161CDEEB0090F60E /* starshape.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
