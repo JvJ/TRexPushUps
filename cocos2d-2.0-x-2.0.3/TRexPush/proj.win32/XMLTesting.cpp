@@ -80,9 +80,9 @@ void xmlTests(std::string filename){
 	}*/
 	//cout<<endl;
 
-	/*
-	auto *dict = CCDictionary::createWithContentsOfFile("starshape.plist");
-	CCDictElement *el;
+	
+	auto *dict = CCDictionary::createWithContentsOfFile("LevelData.plist");
+	/*CCDictElement *el;
 
 	CCDICT_FOREACH(dict, el){
 		cout<<el->getStrKey()<<endl;
@@ -98,12 +98,17 @@ void xmlTests(std::string filename){
 
 	//doc.save(std::cout);
 
+	auto *stagesDict = dynamic_cast<CCDictionary*>(dict->objectForKey("STAGES"));
 	
+	CCDictElement *obj;
+	CCDICT_FOREACH(stagesDict, obj){
+		//cout<<obj-<<endl;
+		//cout<<obj->getObject()->
+		//CCInteger
+	}
 	
 
-	gbox2d::GB2ShapeCache::sharedGB2ShapeCache()->addShapesWithFile("starshape.plist");
-
-	;
+	//gbox2d::GB2ShapeCache::sharedGB2ShapeCache()->addShapesWithFile("starshape.plist");
 
 
 }

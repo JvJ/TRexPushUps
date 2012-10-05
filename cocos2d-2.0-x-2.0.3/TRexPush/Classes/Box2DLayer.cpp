@@ -225,7 +225,7 @@ void Box2DLayer::addNewObjectAtPosition(std::string key, CCPoint p)
     // Define another box shape for our dynamic body.
 	//auto *pShape = svgLoader->createEdge(key);
     
-	SHAPE_CACHE->addFixturesToBody(body, "STAR");
+	SHAPE_CACHE->addFixturesToBody(body, "Trexbig");
 
     // Define the dynamic body fixture.
     /*b2FixtureDef fixtureDef;

@@ -11,7 +11,7 @@
 			<array>
 				<dict>
 					<key>SHAPEFILE</key>
-					<string>trexshape.plist</string>
+					<string>starshape.plist</string>
 					<key>SHAPES</key>
 					<array>
 						<dict>
@@ -24,16 +24,6 @@
 							<key>ID</key>
 							<string>STAR</string>
 						</dict>
-            <dict>
-              <key>IMAGE</key>
-              <string>CloseNormal.png</string>
-              <key>POS_X</key>
-              <integer>100</integer>
-              <key>POS_Y</key>
-              <integer>100</integer>
-              <key>ID</key>
-              <string>STAR</string>
-            </dict>
 					</array>
 					<key>NAME</key>
 					<string>First Level</string>
