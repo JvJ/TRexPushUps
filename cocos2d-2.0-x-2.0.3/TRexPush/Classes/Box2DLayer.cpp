@@ -139,7 +139,7 @@ void Box2DLayer::ccTouchesEnded(CCSet* touches, CCEvent* event)
         CCPoint location = touch->getLocation();
         
         //addNewSpriteAtPosition( location );
-		addNewObjectAtPosition("STAR", location);
+		addNewObjectAtPosition("dinoskull", location);
     }
 }
 
@@ -225,7 +225,7 @@ void Box2DLayer::addNewObjectAtPosition(std::string key, CCPoint p)
     // Define another box shape for our dynamic body.
 	//auto *pShape = svgLoader->createEdge(key);
     
-	SHAPE_CACHE->addFixturesToBody(body, "Trexbig");
+	SHAPE_CACHE->addFixturesToBody(body, key);
 
     // Define the dynamic body fixture.
     /*b2FixtureDef fixtureDef;

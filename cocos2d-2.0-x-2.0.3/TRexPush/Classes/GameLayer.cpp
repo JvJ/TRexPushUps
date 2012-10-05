@@ -40,9 +40,7 @@ CCScene* GameLayer::scene()
 		auto *stage1 = (CCDictionary *)stages->objectAtIndex(0);
 		auto *levels = (CCArray *)stage1->objectForKey("LEVELS");
 		auto *level1 = (CCDictionary *)levels->objectAtIndex(0);
-		auto *shapefile = (CCString *)level1->objectForKey("SHAPEFILE");
-		
-		SHAPE_CACHE->addShapesWithFile(shapefile->getCString());
+
 
 		gameLayer->initializeLayerWithLevelData(level1);
 
@@ -61,8 +59,14 @@ CCScene* GameLayer::scene(int stage, int level){
 // Call this with the level sub-dictionary
 void GameLayer::initializeLayerWithLevelData(CCDictionary *dict){
 
-	// We want the shapes key
+	// First, load the shape files
+	auto *shapefiles = (CCArray *)dict->objectForKey("SHAPEFILES");
+		
+	for (int i = 0; i < shapefiles->count(); i++){
+		SHAPE_CACHE->addShapesWithFile( ((CCString *)shapefiles->objectAtIndex(i))->getCString());
+	}
 
+	// We want the shapes key
 	auto *shapesDict = dynamic_cast<CCArray*>(dict->objectForKey("SHAPES"));
 	
 	if (!shapesDict){

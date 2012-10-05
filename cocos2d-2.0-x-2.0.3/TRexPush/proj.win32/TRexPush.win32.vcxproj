@@ -151,7 +151,9 @@
     <None Include="..\Resources\Icon.png" />
     <None Include="..\Resources\Info.plist" />
     <None Include="..\Resources\iTunesArtwork" />
-    <None Include="..\Resources\LevelData.plist" />
+    <None Include="..\Resources\LevelData.plist">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="..\Resources\riggamarole.svg" />
     <None Include="..\Resources\star.svg" />
     <None Include="..\Resources\starshape.plist" />
