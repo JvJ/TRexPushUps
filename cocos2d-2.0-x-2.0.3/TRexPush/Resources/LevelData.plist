@@ -12,22 +12,12 @@
 				<dict>
 					<key>SHAPEFILES</key>
           <array>
-					  <string>trexshape.plist</string>
+					  <string>maintrex.plist</string>
             <string>starshape.plist</string>
             <string>miscobjects.plist</string>
           </array>
 					<key>SHAPES</key>
 					<array>
-						<dict>
-							<key>IMAGE</key>
-							<string>CloseNormal.png</string>
-							<key>POS_X</key>
-							<integer>100</integer>
-							<key>POS_Y</key>
-							<integer>100</integer>
-							<key>ID</key>
-							<string>STAR</string>
-						</dict>
             <dict>
               <key>IMAGE</key>
               <string>CloseNormal.png</string>
@@ -37,16 +27,6 @@
               <integer>100</integer>
               <key>ID</key>
               <string>Trexbig</string>
-            </dict>
-            <dict>
-              <key>IMAGE</key>
-              <string>CloseNormal.png</string>
-              <key>POS_X</key>
-              <integer>200</integer>
-              <key>POS_Y</key>
-              <integer>200</integer>
-              <key>ID</key>
-              <string>triceraskull</string>
             </dict>
             <dict>
               <key>IMAGE</key>
@@ -67,16 +47,6 @@
               <integer>250</integer>
               <key>ID</key>
               <string>palmtree</string>
-            </dict>
-            <dict>
-              <key>IMAGE</key>
-              <string>CloseNormal.png</string>
-              <key>POS_X</key>
-              <integer>150</integer>
-              <key>POS_Y</key>
-              <integer>250</integer>
-              <key>ID</key>
-              <string>stone</string>
             </dict>
 					</array>
 					<key>NAME</key>

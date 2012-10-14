@@ -14,6 +14,10 @@
 
 #include "GB2ShapeCache.h"
 
+#include "TrexContactListener.h"
+
+#include "GameState.h"
+
 Box2DLayer::Box2DLayer()
 {
     setTouchEnabled( true );
@@ -23,7 +27,7 @@ Box2DLayer::Box2DLayer()
     // init physics
     this->initPhysics();
  
-    
+    GAME_STATE->reset();
     
     CCLabelTTF *label = CCLabelTTF::create("TREX PUSHUPS", "Marker Felt", 32);
     addChild(label, 0);
@@ -53,6 +57,10 @@ void Box2DLayer::initPhysics()
     b2Vec2 gravity;
     gravity.Set(0.0f, -10.0f);
     world = new b2World(gravity);
+
+	// Set the contact handler
+	world->SetContactListener(new TrexContactListener());
+	//world->SetContactFilter(b2ContactFilte
     
     // Do we want to let bodies sleep?
     world->SetAllowSleeping(true);
@@ -158,6 +166,7 @@ void Box2DLayer::update(float dt)
     // generally best to keep the time step and iterations fixed.
     world->Step(dt, velocityIterations, positionIterations);
     
+	GAME_STATE->update(dt);
 }
 
 

@@ -81,6 +81,9 @@
     <None Include="..\Resources\tritest.svg">
       <Filter>resource</Filter>
     </None>
+    <None Include="..\..\..\..\..\TRexBackup\TRexPushUps\cocos2d-2.0-x-2.0.3\TRexPush\Resources\maintrex.plist">
+      <Filter>resource</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TRexPush.rc">
@@ -136,6 +139,12 @@
     <ClInclude Include="..\Classes\GB2Config.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\TrexContactListener.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameState.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -175,6 +184,12 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\GB2ShapeCache.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TrexContactListener.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameState.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
